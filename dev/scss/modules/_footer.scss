@@ -1,0 +1,105 @@
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	opacity: 0.97;
+	box-shadow: -6px 0px 7px 5px rgba(0, 0, 0, 0.4);
+
+	select {
+		font-size: 0.9rem;
+	}
+}
+
+.footer {
+	background-color: $c-lightgrey;
+
+	.u-gridContainer {
+		padding: 0 3rem;
+	}
+
+	h4.widgettitle, .textwidget {
+		margin: 13px 0 -10px 0;
+		color: $c-white;
+		font-size: 0.9rem;
+		font-weight: 600;
+
+		p {		
+			font-size: 0.9rem;
+			font-weight: 400;
+		}
+	}
+	
+	#text-2 {
+		width: 28%;
+
+		img {
+			width: 91px;
+		}
+
+		.widgettitle {
+			display: none;
+		}
+	}
+
+	#text-3 {
+		width: 35%;
+
+		a {
+			color: $c-white;
+			text-decoration: underline;
+		}
+	}
+
+	#nav_menu-2 {
+		#menu-footermenu {
+			display: inline-block;
+			padding: 4px;
+			background-color: $c-lightergrey;;
+		}
+	}
+
+
+	.Footer-inner {
+		padding: 0px 10px 10px;
+	}
+}
+
+.socket {
+	background-color: $c-grey;
+	color: $c-white;
+
+	p {
+		font-size: 0.8rem;
+		text-align: center;
+	}
+
+	a {
+		text-decoration: underline;
+		color: $c-white;
+	}
+}
+
+
+
+
+
+
+
+
+
+// RESPONSIVE FOOTER
+.Footer-inner .widget {
+	@include span-columns(4);
+	@media screen and(max-width: 980px){
+		@include span-columns(12);
+	}
+}
+
+.Footer-inner {
+}
+
+//style the widgets
+.Footer-inner .widget {
+
+}
+

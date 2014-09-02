@@ -1,0 +1,228 @@
+#center-container {
+	box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.9);
+	padding: 0px;
+}
+
+.pagetitle {
+	margin: 0px 0px 40px;
+	display: inline-block;
+	transform: rotate(-5deg);
+	opacity: 0.8;
+	font-size: 1.6rem;
+	width: 210px;
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+
+.bg-title {
+	background-image: url("../img/title.png");
+	background-size: cover;
+	display: inline-block;
+}
+
+#container {
+	position: relative;
+	background-image: url("../img/background.jpg");
+	background-position: -268px 0px;
+	background-size: 135% auto;
+	width: 75%;
+	min-height: 848px;
+	padding: 0 0 190px 0;
+
+	p {
+		font-size: 0.88rem;
+	}
+
+	#content {
+		padding: 0px 40px;
+		margin-bottom: 25px;
+
+
+
+		.youtube {
+			text-align: center;
+			margin-top: 225px;
+
+			iframe {
+				box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+				padding: 4px;
+				background-color: #F1F1F1;
+				opacity: 0.97;
+			}
+		}
+
+		h3 {
+			font-size: 1rem;
+		}
+	}
+}
+
+.home {
+	h2.page-title {
+		display: none;
+	}
+}
+
+#content nav {
+	padding: 0px 0px 15px;
+}
+
+
+/* Contact */
+.page-id-4 {
+	.adress-map {
+		background-color: $c-white;
+		padding: 4px;
+	}
+
+	#content .u-gridCol4 {
+		padding: 0px 15px 5px;
+		background-color: white;
+		opacity: 0.8;
+		font-size: 0.88rem;
+	}
+
+	#gform_wrapper_1 {
+		background-color: $c-white;
+		opacity: 0.88;
+		padding: 4px 10px;
+		max-width: 100%;
+	}
+
+	#gform_1 {
+		position: relative;
+
+		#field_1_1, #field_1_2, #field_1_3 {
+			max-width: 400px;
+		}
+
+		#field_1_4 {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+	}
+
+	.gfield_contains_required {
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+
+	.gfield {
+		padding-left: 10px !important;
+	}
+
+	.gfield.gfield_error {
+		background-color: transparent !important;
+		padding: none;
+		border: none !important;
+	}
+
+	.validation_error {
+		display: none !important;
+	}
+
+}
+
+/* Filosofie */
+
+.page-id-22, .page-id-27  {
+	.u-gridCol6 {
+		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+		width: 47%;
+		padding: 15px;
+		background-color: white;
+		opacity: 0.8;
+		font-size: 0.88rem;
+
+		a {
+			color: $c-black;
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+
+			li {
+				list-style-type: square;
+				margin-bottom: 7px;
+			}
+		}
+	}
+}
+
+.page-id-22 {
+	.u-gridCol6{
+		width: 100%;
+		margin-bottom: 45px;
+	}
+}
+
+
+/* Verkoopunten */
+.page-id-29 {
+	#content .u-gridCol4 {
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+		padding: 4px 10px;
+		margin-bottom: 15px;
+		width: 30%;
+
+		h3.verkooppunt-title {
+			margin: 0px;
+		}
+
+		p {
+			margin: 2px;
+		}
+	}
+
+	.verkooppunten {
+		margin-top: 20px;
+
+		iframe {
+			border: none;
+			width: 653px;
+			height: 300px;
+			margin-bottom: 15px;
+			background-color: $c-white;
+			padding: 4px;
+
+		}
+	}
+}
+
+/* Lookbook */
+
+.page-id-25 {
+	#content .u-gridCol4 {
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+		padding: 4px;
+		margin-bottom: 15px;
+		width: 30%;
+	}
+}
+
+
+/* Collectie  */
+
+.page-id-20  {
+	#content .u-gridCol4 {
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+		margin-bottom: 15px;
+		width: 30%;
+		text-align: center;
+
+		img {
+			max-height: 230px;
+		}
+	}	
+}
+
+
+
+#mobile-menu {
+	display: none;
+}

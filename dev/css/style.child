@@ -1,0 +1,12 @@
+/*
+Theme Name: slate-0.3.1_dutchdreamdenim
+Theme URI: https://github.com/Kah0ona/slate_dutchdreamdenim
+Description: a clean slate - dutchdreamdenim child theme
+Version: 0.3.1
+Author: Jeffrey
+Author URI: http://www.lokaalgevonden.nl
+Tags: slate
+Template: slate-0.3.1
+*/
+
+@import url('../slate-0.3.1/style.css');

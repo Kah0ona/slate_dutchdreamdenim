@@ -1,0 +1,48 @@
+// *************************************
+//
+// Button
+// -> All buttons
+//
+// *************************************
+
+
+
+form#searchform {
+	width: 188px;
+	background-color: $c-lightergrey;
+	padding: 4px;
+	height: 35px;
+
+	div {
+		width: 185px;
+	}
+
+	.screen-reader-text {
+		display: none;
+	}
+
+	input#s {
+        padding: 5px 10px;
+        background-color: $c-white;
+        border: 0px solid #dbdbdb;
+        max-width: 150px;
+        height: 27px;
+        font-size: 0.8rem;
+	}
+
+	input#searchsubmit {
+  		background-image: url("../img/zoeken.png");
+  		background-color: $c-lightergrey;
+  		background-size: 23px;
+  		background-repeat: no-repeat;
+  		background-position: 0px 4px;
+        position:relative;
+        padding:6px 15px;
+        left: 0px;
+        top: -7px;
+        width: 20px;	
+        height: 27px;
+        font-size: 0px;
+        border: none;
+	}
+}

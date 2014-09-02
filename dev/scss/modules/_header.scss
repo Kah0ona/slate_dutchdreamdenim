@@ -1,0 +1,20 @@
+// *************************************
+//
+// Header
+// -> Main site header
+//
+// *************************************
+
+header {
+  position: relative;
+  background-image: url("../img/menu_background.jpg");
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+header.u-gridCol4 {
+  margin-right: 0px;
+  width: 25%;
+}

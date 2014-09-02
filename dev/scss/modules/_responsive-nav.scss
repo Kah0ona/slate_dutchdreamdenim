@@ -1,0 +1,296 @@
+// *************************************
+//
+// responsive-nav
+// -> The resopnsive nav menu css
+//
+// *************************************
+
+.Mob-contact-ico {
+	display: none;
+}
+
+
+
+/*   This is how the navigation should be orderd if using the responsive navigation below.
+
+
+.Navigation {
+	ul.Navigation-list {
+		margin: 0;
+		
+		li.Navigation-listItem {
+			margin: 0 -5px 0 0;
+			line-height: 49px;
+			padding: 15px 0;
+			border-left: 2px solid white;
+			
+			&:first-of-type {
+				border-left: 0px solid white;
+			}
+			
+			&:hover {
+				background-color: $c-grey;
+
+				-webkit-transition:all 0.2s ease;
+				-moz-transition:all 0.2s ease;
+				-o-transition:all 0.2s ease;
+				a.Navigation-link {
+					color: $c-red;
+					text-decoration: none;
+
+				}
+			}
+			
+			a.Navigation-link {
+				color: white;
+				font-size: 14px;
+				padding: 13px;
+				margin: 0;
+				font-weight: 600;
+				letter-spacing: 1.5px;
+			
+			}
+		}
+	}
+}
+*/
+
+
+//======================================================
+//          @media queries - Responsiveness
+//======================================================
+
+
+@media all and (max-width: 1040px) {
+
+//  This is the wrapper for the navigation
+	.Nav-wrap {
+		height: auto;
+		min-height: 60px; // <-- adjust to height of div
+	}
+
+//  Adjust the sizes and colors for erverything to your choice
+	.Navigation {	
+		position: relative;
+		ul.Navigation-list {
+			margin-top: 60px;
+			position: absolute;
+			li.Navigation-listItem {
+				display: block;
+				line-height: 30px;
+				border-left: 0 solid;
+
+				&:last-of-type {
+					margin-bottom: 15px;
+				}
+
+				&:hover {
+					background-color: $c-blue;
+
+					-webkit-transition:all 0.2s ease;
+					-moz-transition:all 0.2s ease;
+					-o-transition:all 0.2s ease;
+					a.Navigation-link {
+						color: $c-blue;
+						text-decoration: none;
+
+					}
+				}
+
+				a.Navigation-link {
+					color: white;
+					display: block;
+					font-size: 14px;
+					padding: 5px;
+					margin: 0;
+					font-weight: 600;
+					letter-spacing: 1.5px;
+
+				}
+			}
+		}
+	}
+
+//	This is for those 3 contact icons on the left of the navbar
+	.Mob-contact-ico {
+		display: block;
+		z-index: 5000;
+
+		a { 
+			border: 2px solid white;
+			position: absolute;
+			display: block;
+			width: 35px;
+			height: 35px;
+			border-radius: 7px;
+			top: 8px;
+			background-color: transparent;
+			&:hover {
+				background-color: rgba(255,255,255,0.2);
+			}
+
+			.Icon--inline {
+				fill: white;
+				width: 2em;
+				height: 2em;
+				padding-bottom: 1em;				
+			}
+		}
+
+		.telsvg {
+			left: 10px;				
+			.Icon--inline {
+				margin: -4px;
+			}
+		}
+
+		.tel2svg {
+			left: 55px;				
+			.Icon--inline {
+				margin: -5px;
+			}
+		}
+
+		.mailsvg {
+			left: 100px;				
+			.Icon--inline {
+				margin: -6px;
+			}
+		}
+	}
+}
+
+
+#js-navCollapse {
+	display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 1045px) {
+
+	.pagetitle {
+		display: none !important;
+	}
+
+
+	#js-navCollapse {
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 20px;
+	}
+
+	#field_1_4 {
+		position: relative !important;
+	}
+
+	#mobile-menu {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 14px;
+	}
+
+	header {
+		position: fixed;
+		background-image: url("../img/mobile_menu.jpg");
+		background-size: 100% 100%;
+		width: 100% !important;
+		height: 70px !important;
+
+
+
+		#social-media {
+			position: absolute;
+			top: 22px;
+			left: 17px;
+
+			img {
+			    max-height: 60px;
+			    padding: 7px;
+			}
+		}
+
+		#logo img {
+		    max-width: 155px;
+		    margin: 0px 0px 8px;
+		}
+
+		#cool-kids {
+			display: none;
+		}
+
+		nav ul {
+			display: none;
+		}
+	}
+
+
+
+	.youtube {
+		margin-top: 0px !important;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	#content{
+		margin-top: 70px;
+		background-image: url("../img/background.jpg");
+		background-size: cover;
+		margin-bottom: -5px !important;
+		padding: 40px 40px !important;
+	}
+
+	#container {
+		width: 100%;
+		background-image: none;
+		padding: 0px;
+	}
+
+	footer {
+		position: relative;
+		
+		.Footer-inner .widget {
+			width: 100%;
+		}
+
+
+		.footer {
+
+			.Footer-inner {
+				text-align: center;
+				#text-2, #text-3 {
+					display: block;
+					margin: 0 auto;
+					text-align: left;
+					float: none;
+					min-width: 250px;
+				}
+
+				#text-2 {
+					text-align: center;
+					margin-bottom: 30px 0 !important;
+				}
+
+				#text-3 {
+					width: 100%;
+					text-align: center;
+				}
+
+				form#searchform {
+					display: inline-block;
+				}
+
+
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#social-media {
+		display: none;
+	}
+}
