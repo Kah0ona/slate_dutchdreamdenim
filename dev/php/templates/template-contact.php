@@ -20,7 +20,6 @@ Template Name: Contactpage
 										<p>Leeuwenburg 135</p>
 										<p>2994 EJ Barendrecht</p>
 										<p>Email: <a href="mailto:info@dutchdreamdenim.com">info@dutchdreamdenim.com </a></p>
-										<p>Tel: 06-49726713</p>
 									</div>
 			
 								</div>					

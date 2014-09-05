@@ -5,17 +5,18 @@ Template Name: Homepage
 ?>
 
 <?php get_header(); ?>
-
-	<div class="u-gridContainer">
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article class="Content Content--home" id="post-<?php the_ID(); ?>">
-			<h2><?php the_title(); ?></h2>
-			<div>
-				<?php the_content(); ?>
-				<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-			</div>
-		</article>
-	<?php endwhile; endif; ?>
-	</div>
-
+	 <div class="u-gridCol8 height" id="container">
+	 	<section id="content">
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<article class="Content" id="post-<?php the_ID(); ?>">
+					<div class="bg-title"> <h2 class="pagetitle"><?php the_title(); ?></h2> </div>
+					<div>
+						<div id="lang">
+							<div class="lang-container"><?php do_action('icl_language_selector'); ?> </div>
+						</div>
+						<?php the_content(); ?>
+					</div>
+				</article>
+			<?php endwhile; endif; ?>
+		</section>
 <?php get_footer(); ?>

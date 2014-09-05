@@ -165,13 +165,40 @@
 	display: none;
 }
 
+
+
+
+
+
 /* Responsive */
 @media screen and (max-width: 1045px) {
+	.button.mobile {
+		display: block !important;
+		top: 7px;
+		right: 135px;
+		position: absolute;
+	}
+
+	.page-id-27 {
+		#content {
+			height: auto !important;
+			.u-gridCol6 {
+				width: 100%;
+				margin-bottom: 15px;
+			}
+		}
+	}
 
 	.pagetitle {
 		display: none !important;
 	}
 
+	.page-id-4 {
+		.u-gridCol4, .u-gridCol8 {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
 
 	#js-navCollapse {
 		display: block;
@@ -187,8 +214,17 @@
 	#mobile-menu {
 		display: block;
 		position: absolute;
-		top: 20px;
-		right: 14px;
+		top: 19px;
+		right: 26px;
+
+		select {
+			background-color: $c-button;
+			opacity: 0.97;
+			color: $c-white;
+			text-indent: 27px;
+			border: none;
+		}
+
 	}
 
 	header {
@@ -196,17 +232,18 @@
 		background-image: url("../img/mobile_menu.jpg");
 		background-size: 100% 100%;
 		width: 100% !important;
-		height: 70px !important;
+		height: 55px !important;
+		z-index: 999999;
 
 
 
 		#social-media {
 			position: absolute;
-			top: 22px;
+			top: 16px;
 			left: 17px;
 
 			img {
-			    max-height: 60px;
+			    max-height: 55px;
 			    padding: 7px;
 			}
 		}
@@ -236,7 +273,7 @@
 	}
 
 	#content{
-		margin-top: 70px;
+		margin-top: 55px;
 		background-image: url("../img/background.jpg");
 		background-size: cover;
 		margin-bottom: -5px !important;
@@ -289,8 +326,17 @@
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 610px) {
 	#social-media {
 		display: none;
+	}
+
+	#logo {
+		text-align: left;
+		padding-left: 10px;
+
+		img {
+			max-width: 140px !important;
+		}
 	}
 }

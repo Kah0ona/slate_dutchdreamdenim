@@ -15,7 +15,6 @@ Template Name: Collectie II
 				$temp = $wp_query;
   				$wp_query = null;
   				$wp_query = new WP_Query();
-  				$show_posts = 6;  //How many post you want on per page
   				$permalink = 'Collecties'; // Default, Post name
   				$post_type = 'collectie';
    
@@ -68,23 +67,6 @@ Template Name: Collectie II
 			<?php endwhile;?>
 
 		</div>
-    	
-    	<nav>
-	    	<?php previous_posts_link('&laquo; ') ?>
-	    	<?php
-	    		$count_post = $count_posts->publish / $show_posts;
-	     
-	    		if( $count_posts->publish % $show_posts == 1 ) {
-	    			$count_post++;
-	    			$count_post = intval($count_post);
-	    		};
-	     
-	    	for($i = 1; $i <= $count_post ; $i++) { ?>
-	    		<a <?php if($req_uri[1] == $i) { echo 'class=active_page'; } ?> href="<?php echo $uri . $i; ?>"><?php echo $i; ?></a>
-	    	<?php } ?>
-
-	    	<?php next_posts_link(' &raquo;') ?>
-    	</nav>
  
   		<?php
   			$wp_query = null;

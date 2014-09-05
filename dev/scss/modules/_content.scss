@@ -1,3 +1,7 @@
+body {
+	min-width: 360px;
+}
+
 #center-container {
 	box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.9);
 	padding: 0px;
@@ -11,13 +15,25 @@
 	font-size: 1.6rem;
 	width: 210px;
 	text-align: center;
-	padding: 10px 0 0 0;
+	padding: 10px 12px 0px 5px;
 }
 
 .bg-title {
 	background-image: url("../img/title.png");
 	background-size: cover;
 	display: inline-block;
+}
+
+.page-id-29 {
+	#container {
+		p {
+	    	font-size: 0.85rem;
+		}
+
+		h3 {
+			font-size: 0.9rem !important;
+		}
+	}
 }
 
 #container {
@@ -35,13 +51,15 @@
 
 	#content {
 		padding: 0px 40px;
-		margin-bottom: 25px;
+		margin-bottom: 20px;
+		height: 635px;
+		overflow-y: auto;
 
 
 
 		.youtube {
 			text-align: center;
-			margin-top: 225px;
+			margin-top: 80px;
 
 			iframe {
 				box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
@@ -61,10 +79,40 @@
 	h2.page-title {
 		display: none;
 	}
+
+	#lang {
+		text-align: center;
+		margin-top: 115px;
+	}
+
+	.lang-container {
+		position: relative;
+		text-align: center;
+		display :inline-block
+	}
+
+	#lang_sel {
+		display: inline-block;
+	}
+	#content {
+		.button {
+			position: absolute !important;
+			top: -11px;
+			left: -19px;
+			z-index: 999 !important;
+	}
+	}
 }
 
 #content nav {
 	padding: 0px 0px 15px;
+	text-align: center;
+
+	a {
+		color: #1B1C17;
+		text-decoration: none;
+		font-size: 1rem;
+	}
 }
 
 

@@ -15,8 +15,8 @@ Template Name: Lookbook
 				$temp = $wp_query;
   				$wp_query = null;
   				$wp_query = new WP_Query();
-  				$show_posts = 6;  //How many post you want on per page
-  				$permalink = 'Lookbook'; // Default, Post name
+
+  				$permalink = 'lookbook'; // Default, Post name
   				$post_type = 'lookbook';
    
 			  	//Know the current URI
@@ -52,44 +52,25 @@ Template Name: Lookbook
   			?>
   			
   			<!--Do stuff-->
-          	<div class="u-gridCol4">
-				<?php 
+        <div class="u-gridCol4">
+  				<?php 
 
-				$image = get_field('lookbook_afbeelding');
+  				$image = get_field('lookbook_afbeelding');
 
-				if( !empty($image) ): ?>
+  				if( !empty($image) ): ?>
 
-				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+  				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
-				<?php endif; ?> 
-          	</div>
+  				<?php endif; ?> 
+      	</div>
+
+
   
   			<?php the_content(); ?>
 			<?php endwhile;?>
 
 		</div>
-    	
-    	<nav>
-	    	<?php previous_posts_link('&laquo; ') ?>
-	    	<?php
-	    		$count_post = $count_posts->publish / $show_posts;
-	     
-	    		if( $count_posts->publish % $show_posts == 1 ) {
-	    			$count_post++;
-	    			$count_post = intval($count_post);
-	    		};
-	     
-	    	for($i = 1; $i <= $count_post ; $i++) { ?>
-	    		<a <?php if($req_uri[1] == $i) { echo 'class=active_page'; } ?> href="<?php echo $uri . $i; ?>"><?php echo $i; ?></a>
-	    	<?php } ?>
-
-	    	<?php next_posts_link(' &raquo;') ?>
-    	</nav>
- 
-  		<?php
-  			$wp_query = null;
-  			$wp_query = $temp;  // Reset
-		?>
+	    
 
 	</section>
 <?php get_footer(); ?>

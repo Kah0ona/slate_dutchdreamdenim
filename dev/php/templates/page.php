@@ -6,7 +6,6 @@
 					<div class="bg-title"> <h2 class="pagetitle"><?php the_title(); ?></h2> </div>
 					<div>
 						<?php the_content(); ?>
-						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 					</div>
 				</article>
 			<?php endwhile; endif; ?>

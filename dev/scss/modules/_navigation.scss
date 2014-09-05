@@ -28,20 +28,7 @@
     text-decoration: none;
   }
 
-  .button, .last-button {
-    position: relative;
-    z-index: 1;
-    background-size: 50px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-  }
 
-  .button {
-    background-image: url("../img/button.png");
-
-  }
 
   .last-button {
     background-image: url("../img/last-button.png");
@@ -64,4 +51,22 @@
 }
 
 
+header, .home #content {
+  .button, .last-button {
+    position: relative;
+    z-index: 1;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
 
+  .button {
+    background-image: url("../img/button.png");
+  }
+
+  .button.mobile {
+    display: none;
+  }
+}

@@ -51,10 +51,11 @@ footer {
 	}
 
 	#nav_menu-2 {
-		#menu-footermenu {
+		.menu-footermenu-container, .menu-footermenu-duits-container, .menu-footermenu-engels-container {
 			display: inline-block;
 			padding: 4px;
-			background-color: $c-lightergrey;;
+			background-color: $c-lightergrey;
+			margin: 15px 0 10px;
 		}
 	}
 
