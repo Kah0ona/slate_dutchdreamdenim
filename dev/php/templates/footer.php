@@ -40,6 +40,8 @@
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/nav-dropdown.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/prepend-svg.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/google-maps.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/fancybox.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/fancybox.pack.js"></script> 
 
   <script src="http://localhost:35729/livereload.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.0/html-inspector.js"></script>

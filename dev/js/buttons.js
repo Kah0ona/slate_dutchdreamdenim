@@ -35,7 +35,10 @@ $("header").css({
 $('ul#menu-mobile').each(function() {
   var list = $(this),
     select = $(document.createElement('select')).insertBefore($(this).hide());
-
+  option0 = $(document.createElement('option'))
+    .appendTo(select)
+    .val('#')
+    .html('- Selecteer -');
   $('>li a', this).each(function() {
     var target = $(this).attr('target'),
       option = $(document.createElement('option'))
@@ -63,6 +66,10 @@ $('#menu-hoofdmenu-1').each(function() {
   var list = $(this),
     select = $(document.createElement('select')).insertBefore($(this).hide());
 
+  option0 = $(document.createElement('option'))
+    .appendTo(select)
+    .val('#')
+    .html('- Selecteer -');
   $('>li a', this).each(function() {
     var target = $(this).attr('target'),
       option = $(document.createElement('option'))
@@ -86,7 +93,10 @@ $('#menu-hoofdmenu-1').each(function() {
 $('#nav_menu-2 .menu').each(function() {
   var list = $(this),
     select = $(document.createElement('select')).insertBefore($(this).hide());
-
+  option0 = $(document.createElement('option'))
+    .appendTo(select)
+    .val('#')
+    .html('- Selecteer -');
   $('>li a', this).each(function() {
     var target = $(this).attr('target'),
       option = $(document.createElement('option'))
@@ -110,7 +120,10 @@ $('#nav_menu-2 .menu').each(function() {
 $('.menu').each(function() {
   var list = $(this),
     select = $(document.createElement('select')).insertBefore($(this).hide());
-
+  option0 = $(document.createElement('option'))
+    .appendTo(select)
+    .val('#')
+    .html('- Selecteer -');
   $('>li a', this).each(function() {
     var target = $(this).attr('target'),
       option = $(document.createElement('option'))
@@ -127,5 +140,10 @@ $('.menu').each(function() {
   });
   list.remove();
   $('.menu-hoofdmenu-container select').wrap('<ul id="menu-footermenu" class="menu"> </ul>');
+
+});
+
+$('#mobile-menu select').on('change', function() {
+  window.location.href = $(this).val();
 
 });

@@ -1,5 +1,5 @@
 body {
-	min-width: 360px;
+	min-width: 320px;
 }
 
 #center-container {
@@ -51,7 +51,7 @@ body {
 
 	#content {
 		padding: 0px 40px;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		height: 635px;
 		overflow-y: auto;
 
@@ -174,69 +174,69 @@ body {
 
 /* Filosofie */
 
-.page-id-22, .page-id-27  {
-	.u-gridCol6 {
-		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
-		width: 47%;
-		padding: 15px;
-		background-color: white;
-		opacity: 0.8;
-		font-size: 0.88rem;
+.u-gridCol6 {
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+	width: 47%;
+	padding: 15px;
+	background-color: white;
+	opacity: 0.8;
+	font-size: 0.88rem;
 
-		a {
-			color: $c-black;
-			text-decoration: underline;
-		}
+	a {
+		color: $c-black;
+		text-decoration: underline;
+	}
 
-		ul {
-			padding-left: 20px;
+	ul {
+		padding-left: 20px;
 
-			li {
-				list-style-type: square;
-				margin-bottom: 7px;
-			}
+		li {
+			list-style-type: square;
+			margin-bottom: 7px;
 		}
 	}
 }
 
-.page-id-22 {
-	.u-gridCol6{
-		width: 100%;
-		margin-bottom: 45px;
-	}
+
+
+.u-gridCol6{
+	width: 100%;
+	margin-bottom: 45px;
 }
+
 
 
 /* Verkoopunten */
-.page-id-29 {
-	#content .u-gridCol4 {
-		background-color: rgba(255, 255, 255, 0.8);
-		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-		padding: 4px 10px;
-		margin-bottom: 15px;
-		width: 30%;
+#content .u-gridCol4 {
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+	padding: 4px 10px;
+	margin-bottom: 15px;
+	width: 30%;
 
-		h3.verkooppunt-title {
-			margin: 0px;
-		}
-
-		p {
-			margin: 2px;
-		}
+	h3.verkooppunt-title {
+		margin: 0px;
 	}
 
-	.verkooppunten {
-		margin-top: 20px;
+	p {
+		margin: 2px;
+	}
+	@media all and (max-width: 500px) {
+		@include span-columns(12);
+	}
+}
 
-		iframe {
-			border: none;
-			width: 653px;
-			height: 300px;
-			margin-bottom: 15px;
-			background-color: $c-white;
-			padding: 4px;
+.verkooppunten {
+	margin-top: 20px;
 
-		}
+	iframe {
+		border: none;
+		width: 100%;
+		height: 300px;
+		margin-bottom: 15px;
+		background-color: $c-white;
+		padding: 4px;
+
 	}
 }
 
@@ -249,14 +249,20 @@ body {
 		padding: 4px;
 		margin-bottom: 15px;
 		width: 30%;
+
+		@media all and (max-width: 500px) {
+			@include span-columns(12);
+		}
 	}
 }
 
 
 /* Collectie  */
 
-.page-id-20  {
-	#content .u-gridCol4 {
+.page-template-template-collectie-php {
+	#content .collection-item {
+		
+		@include span-columns(4);
 		background-color: rgba(255, 255, 255, 0.8);
 		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
 		margin-bottom: 15px;
@@ -266,11 +272,43 @@ body {
 		img {
 			max-height: 230px;
 		}
+		@media all and (max-width: 500px) {
+			@include span-columns(12);
+		}
 	}	
 }
 
-
+.geslacht-titel {
+	color: $c-white;
+}
 
 #mobile-menu {
 	display: none;
+}
+
+/*App page*/
+
+.App-iphone{
+	width: 350px;
+}
+
+.qr-code{
+	width: 200px;
+	height: 175px;
+}
+
+.app-text{
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+	padding-bottom: 250px;
+}
+
+@media all and (max-width: 500px) {
+	.App-iphone{
+		height: 600px;
+	}	
+
+	.app-text{
+		padding-bottom: 25px;
+	}
 }

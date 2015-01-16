@@ -3,6 +3,19 @@
 Template Name: Collectie II
 */
 ?>
+<?php 
+  function getBox($image, $product_name, $content){
+      $result = '<div class="collection-item">';
+      if( !empty($image) ) {
+        $result .= '<a href="'.$image['url'].'" class="fancybox"><img src="'.$image['url'].'" alt="'.$image['alt'].'" /></a>';
+        $result .= '<div class="product_name">'.$product_name.'</div>';
+      }
+      $result .= '</div>';
+      $result .= $content; 
+      return $result;
+  }
+
+?>
 
 <?php get_header(); ?>
 	 <div class="u-gridCol8 height" id="container">
@@ -12,7 +25,7 @@ Template Name: Collectie II
 	 		<div class="u-gridRow">
 			
 			<?php
-				$temp = $wp_query;
+				  $temp = $wp_query;
   				$wp_query = null;
   				$wp_query = new WP_Query();
   				$permalink = 'Collecties'; // Default, Post name
@@ -46,26 +59,29 @@ Template Name: Collectie II
   				
   				//count posts in the custom post type
 				$count_posts = wp_count_posts('collectie');
- 	
-  				while ($wp_query->have_posts()) : $wp_query->the_post();
-  			?>
-  			
-  			<!--Do stuff-->
-          	<div class="u-gridCol4">
-				<?php 
+        $jongens = '';
+        $meisjes = '';
+ 	      
+  			while ($wp_query->have_posts()) {
+            $wp_query->the_post();
+            $image = get_field('collectie_afbeelding');
+            $product_name = get_field('productnaam');
+            $geslacht = get_field('geslacht');
 
-				$image = get_field('collectie_afbeelding');
+            $content = get_the_content();
 
-				if( !empty($image) ): ?>
-
-				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-				<?php endif; ?> 
-          	</div>
-  
-  			<?php the_content(); ?>
-			<?php endwhile;?>
-
+            if($geslacht == 'meisjes') {
+              $meisjes .= getBox($image, $product_name,  $content);
+            } else {
+              $jongens .= getBox($image,  $product_name, $content);
+            }
+        }
+        ?>
+          <h3 class="geslacht-titel">Meisjes</h3>
+          <?php echo $meisjes; ?>
+          <div style="clear:both"></div>
+          <h3 class="geslacht-titel">Jongens</h3>
+          <?php echo $jongens; ?>
 		</div>
  
   		<?php
