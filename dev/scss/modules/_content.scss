@@ -127,8 +127,7 @@ body {
 		padding: 0px 15px 5px;
 		background-color: white;
 		opacity: 0.8;
-		font-size: 0.88rem;
-	}
+		font-size: 0.88rem;	}
 
 	#gform_wrapper_1 {
 		background-color: $c-white;
@@ -224,6 +223,14 @@ body {
 	@media all and (max-width: 500px) {
 		@include span-columns(12);
 	}
+}
+
+.verkooppunt-box{
+	height: 110px;
+}
+
+.verkooppunten-row{
+	margin-top: 30px;
 }
 
 .verkooppunten {

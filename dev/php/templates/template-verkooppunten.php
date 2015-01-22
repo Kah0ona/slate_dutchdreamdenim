@@ -9,10 +9,13 @@ Template Name: Verkooppunten
 	 	<section id="content">
 	 		<div class="bg-title"> <h2 class="pagetitle"><?php the_title(); ?></h2> </div>
 			<div class="verkooppunten">
-				<iframe src="https://mapsengine.google.com/map/embed?mid=zpfWxv7IHvzU.kVAJ6JqaGZBY" width="640" height="480"></iframe>
-			</div>
+				<!--<iframe src="https://mapsengine.google.com/map/embed?mid=zpfWxv7IHvzU.kVAJ6JqaGZBY" width="640" height="480"></iframe>-->
+       
+        <?php echo do_shortcode('[google_maps id="947"]'); ?>
 
-	 		<div class="u-gridRow">
+        </div>
+
+	 		<div class="u-gridRow verkooppunten-row">
 			
 			<?php
 				$temp = $wp_query;
@@ -56,7 +59,7 @@ Template Name: Verkooppunten
 
 
   			<!--Do stuff-->
-          	<div class="u-gridCol4">
+          	<div class="u-gridCol4 verkooppunt-box">
 	            <h3 class="verkooppunt-title"><?php the_title(); ?></h3>
 	           	<p><?php the_field('straat_huisnummer'); ?></p>
 	            <p><?php the_field('postcode_plaats'); ?></p>

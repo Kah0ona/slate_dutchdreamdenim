@@ -36,7 +36,7 @@
 
     <!-- Wordpress head function -->
     <?php wp_head(); ?>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+   <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

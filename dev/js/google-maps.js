@@ -1,6 +1,7 @@
 var map;
 var geocoder;
 
+
 function initialize() {
   geocoder = new google.maps.Geocoder();
   var mapCanvas = document.getElementById('map_canvas');
@@ -26,4 +27,6 @@ function codeAddress(address) {
     }
   });
 }
+google.maps.event.addDomListener(window, 'load', initialize);
+
 google.maps.event.addDomListener(window, 'load', initialize);
