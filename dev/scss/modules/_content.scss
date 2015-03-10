@@ -38,9 +38,9 @@ body {
 
 #container {
 	position: relative;
-	background-image: url("../img/background.jpg");
-	background-position: -268px 0px;
-	background-size: 135% auto;
+	background-image: url("../img/achtergrond.png");
+	background-position: -50px -130px;
+	background-size: 110% auto;
 	width: 75%;
 	min-height: 848px;
 	padding: 0 0 190px 0;
@@ -77,12 +77,13 @@ body {
 
 .home {
 	h2.page-title {
-		display: none;
+		display: hidden;
 	}
 
 	#lang {
 		text-align: center;
-		margin-top: 115px;
+		margin-top: 52%;
+		margin-left: -45%;
 	}
 
 	.lang-container {
