@@ -13,7 +13,7 @@ Template Name: Homepage
 					<div>
 						<div id="lang">
 							<div class="lang-container"><?php do_action('icl_language_selector'); ?> </div>
-						</div>
+						</div> 
 						<?php the_content(); ?>
 					</div>
 				</article>
